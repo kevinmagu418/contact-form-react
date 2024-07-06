@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 
 export default function Contactus() {
     //javascript
+    //use state for  two checkboxes to check they have been checked
     const [selectedCheckbox, setSelectedCheckbox] = useState(null);
-
+// function to handle check event
 const handleChange=(event)=>{
-
+// name is used to extract the value of the name of the clicked checkbox.by destructuring the element
     const { name } = event.target;
     setSelectedCheckbox(name);
   };
@@ -14,6 +15,7 @@ const handleChange=(event)=>{
   const [lastname, setlastname] = useState('')
   const [email, setemail] = useState('')
   const [message, setmessage] = useState('')
+  //since its just one  just toogle between true and false
   const [accept, setAccept] = useState(false)
 
 
@@ -28,6 +30,7 @@ const handleChange=(event)=>{
       message,
       selectedCheckbox
     };
+    //json to parse in to string
     localStorage.setItem('formData', JSON.stringify(formData));
     console.log('Form Data Saved:', formData);
   };
@@ -62,6 +65,7 @@ const handleChange=(event)=>{
                 <h6>Query Type*</h6>
                 <div className='checkme'>
                 <div className='checkenclose'>
+                {/*using name properties to track  which box has been checked by equating it to the selecter function  handle change to handle  the event */}
               <input type="checkbox" name='checkbox1' className='checkbox1' checked={selectedCheckbox==='checkbox1'} onChange={handleChange}/>
               <label>General Enquiry</label>
               </div> 
