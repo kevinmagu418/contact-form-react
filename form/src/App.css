@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  background-color:#B5D1B8;
+font-family:'poppins',sans-serif ;
+  display: flex;
+  justify-content: center;
+}
+.parentcontainer{
+  border-style:groove;
+  width:50vw;
+  height:95vh;
+  display:flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color:#FFFFFF;
+  border-width:1px;
+  color: rgb(24, 18, 18);
+  border-color:aliceblue ;
+  
+}
+form{
+  display:flex;
+  flex-direction: column;
+  gap:0.5em ;
+  height:100vh ;
+}
+.namediv{
+  display:flex;
+  flex-direction: row;
+  gap: 3em;
+}
+
+.firstname ,.lastname{
+display:flex;
+flex-direction: column;
+gap:0.5em
+}
+.name{
+width:250px;
+border-radius:5px;
+height:40px ;
+background-color:#FFFFFF;
+border-style:inset;
+border-color:#2d5a31;
+border-width:1px;
+color:black;
+text-align: center;
+
+}
+.email{
+  display: flex;
+  flex-direction: column;
+  gap:0.5em;
+}
+.emailinput{
+  height:40px;
+  background-color:#FFFFFF;
+  border-style:ridge;
+  border-color:#2d5a31;
+  border-radius:5px;
+  border-width:1px ;
+  color:black;
+  text-align:center;
+
+
+}
+.checkenclose{
+  height:40px;
+  border-style: groove;
+  background-color:#FFFFFF;
+  border-style:ridge;
+  border-color:#2d5a31;
+  border-radius:5px;
+flex-grow: 2;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.5em;
+border-width:1px ;
+
+
+}
+.form-check{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  
+  
+}
+
+.checkme{
+display:flex;
+flex-direction: row;
+gap:0.8em;
+flex-grow:1 ;
+
+}
+label{
+  font-size:10px ;
+}
+.messagelabel{
+  font-size: 12px;
+}
+.message{
+  display:flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+}
+textarea{
+  background-color: #FFFFFF;
+  border-width:1px;
+  border-style: groove;
+  border-style:ridge;
+  border-color:#2d5a31;
+  border-radius:5px;
+  margin-bottom:2vh ;
+  color: black;
+}
+.termsandconditions{
+  margin-bottom: 0.5vh;
+
+}
+.submitbtn button{
+width:40vw;
+background-color:#255b37;
+}
+.consent{
+  font-size:12px ;
+}
